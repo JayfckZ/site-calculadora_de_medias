@@ -48,7 +48,7 @@ function calculaMedia(){
 function atualizarMedia(){
     const mediaFinal = calculaMedia()
 
-    document.getElementById('media-final').innerHTML = mediaFinal
+    document.getElementById('media-final').innerHTML = mediaFinal.toFixed(2)
     document.getElementById('media-final-resultado').innerHTML = mediaFinal >= notaMinima ? '<span class="resultado aprovado">Aprovado</span>' : '<span class="resultado reprovado">Reprovado</span>'
 }
 
